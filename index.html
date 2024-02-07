@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="bakinsky.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <title>Bakinsky</title>
+</head>
+<style>
+   body {
+   height: 1280px;
+   height: 100vh;
+   background: #000000;
+   padding: 0;
+   margin: 0;
+   color: antiquewhite;
+}
+
+.container {
+   position: relative;
+   width: 906px;
+   margin: 0 auto;
+   padding: 0;
+   border-left: 1px solid rgba(128, 128, 128, 0.319);
+   border-right: 1px solid rgba(128, 128, 128, 0.319);
+}
+
+img {
+   filter: contrast(150%) brightness(70%);
+}
+
+.header {
+  height: 150px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.main {
+   display: grid;
+   height: 870px;
+}
+
+.first__block,
+.second__block,
+.third__block {
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 30px;
+   height: 250px;
+   margin: 30px 0;
+}
+
+.table__img {
+   /* position: absolute; */
+   display: block;
+   filter:opacity(.9);
+}
+
+.type__of__dish {
+   display: flex;
+   justify-content: start;
+   font-weight: 900;
+   font-style: italic;
+   color: #9e7100;
+   margin: 0 80px;
+}
+.dish__name {
+   color: #947830;
+   font-style: italic;
+   font-size: 22px;
+   padding: 10px;
+}
+
+.dish__weight {
+   color: #8a8a83;
+   font-size: 20px;
+   padding: 10px;
+}
+
+.dish__price {
+   color: #947830;
+   font-weight: 600;
+   font-size: 22px;
+   padding: 10px;
+}
+
+.footer {
+   position: relative;
+   height: 150px;
+   display: flex;
+}
+
+.footer img {
+   position: absolute;
+}
+
+.footer__img__right {
+   position: absolute;
+   right: 0;
+}
+
+.footer__img__left {
+   position: absolute;
+   left: 0;
+  }
+
+.next__button {
+   position: absolute;
+   display: flex;
+   align-items: baseline;
+   justify-content: center;
+   color: #947830;
+   border-radius: 9px;
+   border: 1px solid goldenrod;
+   top: 40%;
+   left: 48%;
+   font-size: 55px;
+}
+
+ td:nth-child(2) {
+ text-align: center;
+}
+
+td:nth-child(3) {
+ text-align: end;
+}
+
+</style>
+<body>
+   <div class="container">
+   <header class="header">
+         <img src="/image/top-left.png" height="150px" />
+         <img src="/image/bakinsky-logo.png" height="100px"/>
+         <img src="/image/top-right.png" height="150px" />    
+   </header>
+   </div>
+   <main class="main">
+      <div class="container">
+      <h1 class="type__of__dish">Шашлик</h1>
+<!-- first__block -->
+      <div class="first__block">
+            <table border="0">
+               <tr>
+                  <td class="dish__name">Баранина на кістці</td>
+                  <td class="dish__weight">250/30</td>
+                  <td class="dish__price">170.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Баранина пістолет</td>
+                  <td class="dish__weight">250/30</td>
+                  <td class="dish__price">200.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Телятина пістолет</td>
+                  <td class="dish__weight">250/30</td>
+                  <td class="dish__price">200.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Телятина м'якоть</td>
+                  <td class="dish__weight">170/30</td>
+                  <td class="dish__price">200.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Свинина м'якоть</td>
+                  <td class="dish__weight">170/30</td>
+                  <td class="dish__price">170.00</td>
+               </tr>
+            </table>
+            <img class="table__img" src="/image/table-1.png"/>
+      </div>
+
+<!-- second__block -->
+      <div class="second__block">      
+            <img class="table__img" src="/image/table-2.png"/>
+            <table border="0">
+               <tr>
+                  <td class="dish__name">Люля-кебаб</td>
+                  <td class="dish__weight">150/30</td>
+                  <td class="dish__price">140.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Шашлик асорті</td>
+                  <td class="dish__weight">170/30</td>
+                  <td class="dish__price">180.00</td>
+               </tr>
+               <!-- <tr>
+                  <td class="dish__name">Шашлик з нутрощів</td>
+                  <td class="dish__weight">170/30</td>
+                  <td class="dish__price">130.00</td>
+               </tr> -->
+               <tr>
+                  <td class="dish__name">Курячі крильця</td>
+                  <td class="dish__weight">3шт.</td>
+                  <td class="dish__price">90.00</td>
+               </tr>
+               <!-- <tr>
+                  <td class="dish__name">Куряче філе</td>
+                  <td class="dish__weight">170/30</td>
+                  <td class="dish__price">130.00</td>
+               </tr> -->
+               <tr>
+                  <td class="dish__name">Курча табака</td>
+                  <td class="dish__weight">1шт.</td>
+                  <td class="dish__price">180.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Перепілка</td>
+                  <td class="dish__weight">1шт.</td>
+                  <td class="dish__price">100.00</td>
+               </tr>
+            </table>
+      </div>
+
+<!-- third__block -->
+      <div class="third__block">
+            <table border="0">
+               <tr>
+                  <td class="dish__name">Сьомга гриль</td>
+                  <td class="dish__weight">170/30</td>
+                  <td class="dish__price">200.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Картопля на мангалі</td>
+                  <td class="dish__weight">400гр.</td>
+                  <td class="dish__price">100.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Обочі гриль</td>
+                  <td class="dish__weight">300гр.</td>
+                  <td class="dish__price">100.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Гриби гриль</td>
+                  <td class="dish__weight">200/50</td>
+                  <td class="dish__price">80.00</td>
+               </tr>
+               <tr>
+                  <td class="dish__name">Лаваш із сиром та зеленню</td>
+                  <td class="dish__weight">200гр.</td>
+                  <td class="dish__price">80.00</td>
+               </tr>
+               <!-- <tr>
+                  <td class="dish__name">Лаваш тоненький</td>
+                  <td class="dish__weight">1 шт.</td>
+                  <td class="dish__price">15.00</td>
+               </tr> -->
+               <!-- <tr>
+                  <td class="dish__name">Лаваш гарячий</td>
+                  <td class="dish__weight">1 шт.</td>
+                  <td class="dish__price">40.00</td>
+               </tr> -->
+               <!-- <tr>
+                  <td class="dish__name">Соус до шашлику</td>
+                  <td class="dish__weight">100</td>
+                  <td class="dish__price">30.00</td>
+               </tr> -->
+            </table>
+         <img class="table__img" src="/image/table-3.png"/>
+      </div>
+</div>
+   </main>
+   <footer class="footer">
+      <div class="container">
+         <img  class="footer__img__leftt" src="/image/bottom-left.png" height="150px" />
+         <!-- <span class="next__button" data-page="turn-1">
+            <i class='bx bxs-chevrons-right'></i>
+         </span> -->
+         <img class="footer__img__right" src="/image/bottom-right.png" height="150px" />
+      </div>
+      
+   </footer>
+</div>
+  
+</body>
+</html>
